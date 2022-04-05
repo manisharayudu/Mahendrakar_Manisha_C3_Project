@@ -58,8 +58,7 @@ class RestaurantTest {
     }
     @Test
     public void removing_item_from_menu_should_decrease_menu_size_by_1() throws itemNotFoundException {
-         createMockRestaurant();
-
+createMockRestaurant();
         int initialMenuSize = restaurant.getMenu().size();
         restaurant.removeFromMenu("Vegetable lasagne");
         assertEquals(initialMenuSize-1,restaurant.getMenu().size());
